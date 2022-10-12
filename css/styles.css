@@ -1,0 +1,72 @@
+body{
+    font-family: "Shrikhand", "Rokobo", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+#head{
+    display: flex;
+    justify-content: center;
+    font-family: "Shrikland", cursive;
+    padding-bottom: 10px;
+}
+.logo{
+    height: 30px;
+}
+
+.localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    gap: 20px;
+}
+
+.nos_restaurants{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nos_restaurants h2{
+    text-align: center;
+}
+
+.nos_restaurants .btn{
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: palevioletred;
+}
+
+/*fonctionnement*/
+.fonctionnement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.fonctionnement ol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.fonctionnement ol li{
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    counter-reset: steps;
+    list-style-type: none;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: pink;
+    transition: 0.2s;
+}
+.fonctionnement ol li i{
+    color: black;
+}
+.fonctionnement ol li:hover i{
+    color: #9356dc;
+}
