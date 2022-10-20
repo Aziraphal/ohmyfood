@@ -1,13 +1,26 @@
+@font-face {
+    font-family: "Shrikhand";
+    src: url('public/Fonts/Shrikhand-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('public/Fonts/Roboto-Regular.ttf') format('truetype');
+}
+
 body {
     font-family: "Shrikhand", "Roboto", Arial, sans-serif;
     box-sizing: border-box;
 }
+$color-primary: #9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
 .loader{
     height: 100%;
     width: 100%;
-    background-color: #FF79DA;
+    background-color: $color-secondary;
     animation-delay: 3s;
 }
+
 #head{
     display: flex;
     justify-content: center;
@@ -99,7 +112,7 @@ body {
 }
 
 .fonctionnement ol li:hover i {
-    color: #9356DC;
+    color: $color-primary;
 }
 
 .fonctionnement ol li::before {
@@ -114,7 +127,7 @@ body {
     border-radius: 50%;
     width: 22px;
     height: 22px;
-    background-color: #9356DC;
+    background-color: $color-primary;
     color: white;
     transform: translate(10px, -3px);
 }
@@ -153,7 +166,7 @@ body {
     margin-top: 20px;
     padding: 10px;
     color: #065f2e;
-    background-color: #99E2D0;
+    background-color: $color-tertiary;
     font-weight: 600;
 }
 .card_description{
