@@ -1,4 +1,17 @@
 @charset "UTF-8";
+.logo .h {
+  font-family: "Shrikhand", Arial, sans-serif;
+}
+
+.body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+  font-family: "Shrikhand", "Roboto", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Shrikhand";
   src: url("public/Fonts/Shrikhand-Regular.otf") format("opentype");
@@ -7,15 +20,41 @@
   font-family: "Roboto";
   src: url("public/Fonts/Roboto-Regular.ttf") format("truetype");
 }
-body {
-  font-family: "Shrikhand", "Roboto", Arial, sans-serif;
-  box-sizing: border-box;
-}
 .loader {
   height: 100%;
   width: 100%;
   background-color: #FF79DA;
-  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+footer {
+  background: #353535;
+  color: white;
+}
+
+footer .footer_conteneur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+footer .footer_conteneur h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+}
+
+footer .footer_conteneur a {
+  color: white;
+  text-decoration: none;
+  line-height: 28px;
+}
+
+.footer_conteneur i.fa-solid.fa-utensils {
+  margin-right: 6px;
 }
 
 #head {
@@ -55,6 +94,7 @@ body {
 
 .nos_restaurants h2 {
   text-align: center;
+  color: red;
 }
 
 .nos_restaurants p {
@@ -64,9 +104,9 @@ body {
 
 .nos_restaurants .btn {
   border-radius: 30px;
-  padding: 15px;
   border: none;
   font-size: 1rem;
+  padding: 15px;
   cursor: pointer;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -161,7 +201,8 @@ body {
 }
 
 .card_images img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -192,34 +233,4 @@ body {
   margin-top: -15px;
 }
 
-/*fin restaurants*/
-footer {
-  background: #353535;
-  color: white;
-}
-
-footer .footer_conteneur {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1440px;
-  margin: auto;
-  padding-left: 20px;
-}
-
-footer .footer_conteneur h3 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-}
-
-footer .footer_conteneur a {
-  color: white;
-  text-decoration: none;
-  line-height: 28px;
-}
-
-.footer_conteneur i.fa-solid.fa-utensils {
-  margin-right: 6px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*fin restaurants*//*# sourceMappingURL=main.css.map */

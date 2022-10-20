@@ -1,0 +1,24 @@
+footer{
+    background: #353535;
+    color: white;
+}
+footer .footer_conteneur{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1440px;
+    margin: auto;
+    padding-left: 20px;
+}
+footer .footer_conteneur h3{
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+}
+footer .footer_conteneur a{
+    color: white;
+    text-decoration: none;
+    line-height: 28px;
+}
+.footer_conteneur i.fa-solid.fa-utensils{
+    margin-right: 6px;
+}

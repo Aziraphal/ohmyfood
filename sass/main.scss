@@ -1,25 +1,19 @@
-@font-face {
-    font-family: "Shrikhand";
-    src: url('public/Fonts/Shrikhand-Regular.otf') format('opentype');
-}
-@font-face {
-    font-family: "Roboto";
-    src: url('public/Fonts/Roboto-Regular.ttf') format('truetype');
-}
 
-body {
-    font-family: "Shrikhand", "Roboto", Arial, sans-serif;
-    box-sizing: border-box;
-}
-$color-primary: #9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
-.loader{
-    height: 100%;
-    width: 100%;
-    background-color: $color-secondary;
-    animation-delay: 3s;
-}
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/loader";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/containers";
+@import "./layouts/form";
+@import "./layouts/footer";
+
+
 
 #head{
     display: flex;
@@ -55,6 +49,7 @@ $color-tertiary:#99E2D0;
 
 .nos_restaurants h2 {
     text-align: center;
+    color: red;
 }
 .nos_restaurants p{
     text-align: center;
@@ -63,6 +58,8 @@ $color-tertiary:#99E2D0;
 
 .nos_restaurants .btn {
     border-radius: 30px;
+    border: none;
+    font-size: 1rem;
     padding: 15px;
     cursor: pointer;
     color: white;
@@ -186,27 +183,3 @@ $color-tertiary:#99E2D0;
 
 /*fin restaurants*/
 
-footer{
-    background: #353535;
-    color: white;
-}
-footer .footer_conteneur{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1440px;
-    margin: auto;
-    padding-left: 20px;
-}
-footer .footer_conteneur h3{
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-}
-footer .footer_conteneur a{
-    color: white;
-    text-decoration: none;
-    line-height: 28px;
-}
-.footer_conteneur i.fa-solid.fa-utensils{
-    margin-right: 6px;
-}
