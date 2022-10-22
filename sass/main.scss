@@ -222,19 +222,35 @@
 }
 .container_menu h1{
   font-family: "Shrikhand";
-  font-size: 26px;
+  font-size: 32px;
 }
 .container_menu h3{
   font-weight: lighter;
-  padding-left: 21px;
+  padding-left: 26px;
+}
+.bottom_border{
+  border: $color-tertiary solid;
+  position: absolute;
+  transform: translateY(-14px);
+  left: 27px;
+  width: 8%;
 }
 .card_menu{
+  height: 66px;
   border-radius: 20px;
-  box-shadow: 2px 3px 16px lightgray;
+  box-shadow: 2px 8px 16px lightgray;
   margin: 20px;
-  padding: 0 14px;
+  padding: 0 25px 5px 10px;
 }
-/*fin restaurants*/
+.card_menu p{
+  display: flex;
+  justify-content: space-between;
+}
+.card_menu h4{
+  margin-bottom: 0;
+  padding-top: 10px;
+  font-size: large;
+}
 
 
 /*# sourceMappingURL=styles.css.map */
