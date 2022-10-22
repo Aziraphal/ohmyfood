@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aziraphal/ohmyfoodtest.git"
+    "url": "git+https://github.com/Aziraphal/ohmyfood.git"
   },
   "author": "Cyril Paquier",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aziraphal/ohmyfoodtest/issues"
+    "url": "https://github.com/Aziraphal/ohmyfood/issues"
   },
-  "homepage": "https://github.com/Aziraphal/ohmyfoodtest#readme"
+  "homepage": "https://github.com/Aziraphal/ohmyfood#readme"
 }
