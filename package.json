@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "p3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aziraphal/ohmyfoodtest.git"
+  },
+  "author": "Cyril Paquier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aziraphal/ohmyfoodtest/issues"
+  },
+  "homepage": "https://github.com/Aziraphal/ohmyfoodtest#readme"
+}
