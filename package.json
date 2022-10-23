@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Aziraphal/ohmyfood/issues"
   },
-  "homepage": "https://github.com/Aziraphal/ohmyfood#readme"
+  "homepage": "https://github.com/Aziraphal/ohmyfood#readme",
+  "dependencies": {
+    "package.json": "^0.0.0"
+  }
 }
