@@ -6,7 +6,9 @@
 @import "./layout/header";
 @import "./layout/footer";
 
-
+header{
+  Permissions-Policy: interest-cohort=()
+}
 #head {
   display: flex;
   justify-content: center;
