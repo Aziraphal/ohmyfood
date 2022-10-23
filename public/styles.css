@@ -29,25 +29,6 @@ header {
   animation-delay: 3s;
 }
 
-#head {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-
-.logo {
-  height: 30px;
-}
-
-.menu_header {
-  display: flex;
-  justify-content: center;
-}
-
-.menu_header img::before {
-  font-weight: 100;
-}
-
 footer {
   background: #353535;
   color: white;
