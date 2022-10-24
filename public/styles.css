@@ -33,7 +33,6 @@ footer {
   background: #353535;
   color: white;
 }
-
 footer .footer_conteneur {
   display: flex;
   flex-direction: column;
@@ -42,12 +41,10 @@ footer .footer_conteneur {
   margin: auto;
   padding-left: 20px;
 }
-
 footer .footer_conteneur h3 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
 }
-
 footer .footer_conteneur a {
   color: white;
   text-decoration: none;
