@@ -4,80 +4,11 @@
 @import "./components/buttons";
 @import "./layout/loader";
 @import "./layout/header";
+@import "./layout/fonctionnement";
+@import "./layout/nos_restaurants";
 @import "./layout/footer";
 
 
-#head {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-.logo {
-  height: 30px;
-}
-
-#head .menu_header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.menu_header a{
-  position: absolute;
-  left: 10%;
-  color: black;
-  font-size: 20px;
-}
-
-.main_menu img{
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-}
-.img_restaurant{
-  height: 230px;
-}
-
-
-
-.localisation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #eaeaea;
-  gap: 20px;
-}
-
-.nos_restaurants {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background: #f6f6f6;
-  padding-bottom: 40px;
-}
-
-.nos_restaurants h2 {
-  text-align: center;
-}
-
-.nos_restaurants p {
-  text-align: center;
-  padding: 0 45px;
-}
-
-.nos_restaurants .btn {
-  border-radius: 30px;
-  padding: 15px;
-  border: none;
-  margin: 20px 0 30px 0;
-  font-size: 1em;
-  cursor: pointer;
-  color: white;
-  background: linear-gradient(177deg, #FF79DA, #9356DC);
-}
-
-/*fonctionnement*/
 .fonctionnement {
   display: flex;
   justify-content: center;
@@ -149,9 +80,47 @@
   color: white;
   transform: translate(10px, -1px);
 }
+#head {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
 
-/*fin fonctionnement*/
-/*début restaurants*/
+.logo {
+  height: 30px;
+}
+
+#head .menu_header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu_header a{
+  position: absolute;
+  left: 10%;
+  color: black;
+  font-size: 20px;
+}
+
+.main_menu img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.img_restaurant{
+  height: 230px;
+}
+
+
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  gap: 20px;
+}
+
 .restaurants {
   background-color: #eaeaea;
   padding: 30px 20px;
@@ -256,29 +225,31 @@
 .menu_entrees{
   animation: animation_menus;
   animation-delay: 0s;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 .menu_plats{
   animation: animation_menus;
-  animation-delay: 0.5s;
-  animation-duration: 3s;
+  animation-delay: 0.4s;
+  animation-duration: 2s;
   animation-fill-mode: backwards;
 }
 .menu_desserts{
   animation: animation_menus;
-  animation-delay: 1s;
-  animation-duration: 3s;
+  animation-delay: 0.8s;
+  animation-duration: 2s;
   animation-fill-mode: backwards;
 }
 /*keyframes animation menu*/
 @keyframes animation_menus{
   from{
-    transition: ease-in-out;
+    transform: scale(30%);
     opacity: 0;
+    transition: ease-in-out;
 
   }
   to{
     opacity: 1;
+    transform: scale(100%);
 
   }
 }

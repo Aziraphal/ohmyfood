@@ -1,0 +1,27 @@
+main{
+    .nos_restaurants {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background: #f6f6f6;
+      padding-bottom: 40px;
+    .h2 {
+      text-align: center;
+    }
+    .p {
+      text-align: center;
+      padding: 0 45px;
+    }
+    .btn{
+      border-radius: 30px;
+      padding: 15px;
+      border: none;
+      margin: 20px 0 30px 0;
+      font-size: 1em;
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(177deg, #FF79DA, #9356DC);
+    }
+    }
+    }
