@@ -253,5 +253,48 @@
   font-size: large;
 }
 
+.menu_entrees{
+  animation: animation_menus;
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+.menu_plats{
+  animation: animation_menus;
+  animation-delay: 0.5s;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+.menu_desserts{
+  animation: animation_menus;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+}
+/*keyframes animation menu*/
+@keyframes animation_menus{
+  from{
+    transition: ease-in-out;
+    opacity: 0;
+
+  }
+  to{
+    opacity: 1;
+
+  }
+}
+
+
+@keyframes preloader {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+.loader{
+  animation: preloader;
+  stroke-width: 3.5;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
 
 /*# sourceMappingURL=styles.css.map */
