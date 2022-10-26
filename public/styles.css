@@ -43,15 +43,9 @@ main .nos_restaurants {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   background: #f6f6f6;
-  padding-bottom: 40px;
-}
-main .nos_restaurants .h2 {
-  text-align: center;
-}
-main .nos_restaurants .p {
-  text-align: center;
-  padding: 0 45px;
+  padding-bottom: 30px;
 }
 main .nos_restaurants .btn {
   border-radius: 30px;
@@ -62,6 +56,16 @@ main .nos_restaurants .btn {
   cursor: pointer;
   color: white;
   background: linear-gradient(177deg, #FF79DA, #9356DC);
+}
+
+.nos_restaurants p {
+  padding: 0 10px;
+}
+
+.nos_restaurants h2 {
+  font-size: 25px;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
 }
 
 footer {
@@ -199,11 +203,24 @@ footer .footer_conteneur a {
 }
 
 .localisation {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
   gap: 20px;
+  padding: 10px 30px;
+}
+
+input {
+  border: none;
+  font-size: larger;
+  background-color: #eaeaea;
+}
+
+.search::placeholder {
+  content: "";
+  color: black;
 }
 
 .restaurants {
@@ -218,10 +235,17 @@ footer .footer_conteneur a {
 }
 
 .card {
+  position: relative;
   text-decoration: none;
   border-radius: 30px;
   overflow: hidden;
   background-color: white;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #99E2D0;
+  transition: 0.2s;
 }
 
 .card_images {
@@ -237,7 +261,7 @@ footer .footer_conteneur a {
 
 .new {
   position: absolute;
-  right: 45px;
+  right: 33px;
   margin-top: 20px;
   padding: 10px;
   color: #065f2e;
@@ -246,15 +270,41 @@ footer .footer_conteneur a {
 }
 
 .card_description {
+  position: relative;
   color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 20px;
 }
 
 .card_heart {
   font-size: xx-large;
+  position: relative;
+  cursor: pointer;
+}
+
+.card_heart i.fa-heart {
+  position: absolute;
+  right: 20px;
+  bottom: 60px;
+}
+
+.card_heart i.fa-solid.fa-heart {
+  opacity: 0;
+}
+
+.card_heart i.fa-solid.fa-heart:not(:active) {
+  opacity: 0;
+}
+
+.card_heart i.fa-solid.fa-heart:hover {
+  opacity: 1;
+  color: #9356DC;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+  background: white;
+}
+
+.card_heart .fa-heart > a {
+  pointer-events: none;
 }
 
 .card_title p {
@@ -277,9 +327,14 @@ footer .footer_conteneur a {
   align-items: center;
 }
 
+.restaurant_title .card_heart {
+  top: 74px;
+}
+
 .container_menu h1 {
   font-family: "Shrikhand";
-  font-size: 32px;
+  font-size: 26px;
+  padding-right: 20px;
 }
 
 .container_menu h3 {
