@@ -297,10 +297,12 @@ input {
 
 .card_heart i.fa-solid.fa-heart:hover {
   opacity: 1;
-  color: #9356DC;
+  color: transparent;
   transition-duration: 0.8s;
   transition-timing-function: ease-in-out;
-  background: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: border-box;
+  -webkit-background-clip: text;
 }
 
 .card_heart .fa-heart > a {

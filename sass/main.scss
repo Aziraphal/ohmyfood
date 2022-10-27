@@ -214,10 +214,12 @@ input {
 
 .card_heart i.fa-solid.fa-heart:hover {
   opacity: 1;
-  color: $color-primary;
+  color: transparent;
   transition-duration: 0.8s;
   transition-timing-function: ease-in-out;
-  background: white;
+  background: linear-gradient($color-primary, $color-secondary);
+  background-clip: border-box;
+  -webkit-background-clip: text;
 }
 
 .card_heart .fa-heart>a {
