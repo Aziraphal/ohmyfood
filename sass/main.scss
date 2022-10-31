@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "./utils/variables";
+@import "./utils/keyframes";
 @import "./base/base";
 @import "./components/buttons";
 @import "./layout/loader";
@@ -311,14 +312,8 @@ input {
   border-radius: 0 20px 20px 0;
   font-size: x-large;
 }
-@keyframes circle{
-  from {
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
-}
+
+
 .card_menu:hover .check {
   opacity: 1;
   transition: transform 0.5s ease-in-out;
@@ -370,34 +365,8 @@ input {
   animation-fill-mode: backwards;
 }
 
-/*keyframes animation menu*/
-@keyframes animation_menus {
-  from {
-    transform: scale(30%);
-    opacity: 0;
-    transition: ease-in-out;
-
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(100%);
-
-  }
-}
 
 
-@keyframes preloader {
-  50% {
-    transform: rotate(360deg);
-  }
-}
 
-.loader {
-  animation: preloader;
-  stroke-width: 3.5;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-}
 
 /*# sourceMappingURL=styles.css.map */
