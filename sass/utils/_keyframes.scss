@@ -30,27 +30,17 @@
         transform: rotate(0deg);
     }
     to{
-        transform: rotate(360deg);    
+        transform: rotate(360deg);  
     }
   }
 
-  @keyframes animate {
-    0% {
-      background-position: -500%;
-      animation-duration: 3s;
-      animation-delay: 0.1s;
-    }
-    100% {
-      background-position: 500%;
-    }
-  }
+
   @keyframes ender {
     from{
         opacity: 1;
-        animation-duration: 3.1s;
     }
     to{
         opacity: 0;
-        animation-fill-mode: forwards;
+        z-index: -999;
     }
   }
