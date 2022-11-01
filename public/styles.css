@@ -118,7 +118,7 @@ header {
   height: 160px;
   border-radius: 50%;
   border: #99E2D0 solid 5px;
-  animation: turn;
+  animation: turn none;
 }
 
 main .nos_restaurants {
@@ -286,13 +286,17 @@ footer .footer_conteneur a {
 }
 
 .localisation {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
   gap: 20px;
   padding: 10px 30px;
+}
+
+.localisation i {
+  margin-left: 90px;
 }
 
 input {
