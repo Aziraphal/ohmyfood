@@ -1,3 +1,11 @@
+@media screen and (min-width: 992px) {
+  .fonctionnement {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 /*keyframes animation check*/
 @keyframes circle {
   from {
@@ -121,137 +129,6 @@ header {
   animation: turn none;
 }
 
-main .nos_restaurants {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: #f6f6f6;
-  padding-bottom: 30px;
-}
-main .nos_restaurants .btn {
-  border-radius: 30px;
-  padding: 15px;
-  border: none;
-  margin: 20px 0 30px 0;
-  font-size: 1em;
-  cursor: pointer;
-  color: white;
-  background: linear-gradient(177deg, #FF79DA, #9356DC);
-}
-
-.nos_restaurants p {
-  padding: 0 10px;
-}
-
-.nos_restaurants h2 {
-  font-size: 25px;
-  padding: 10px 10px 0 10px;
-  margin-bottom: 0;
-}
-
-footer {
-  background: #353535;
-  color: white;
-}
-footer .footer_conteneur {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1440px;
-  margin: auto;
-  padding-left: 20px;
-}
-footer .footer_conteneur h3 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-}
-footer .footer_conteneur a {
-  color: white;
-  text-decoration: none;
-  line-height: 28px;
-}
-
-.footer_conteneur i.fa-solid.fa-utensils {
-  margin-right: 6px;
-}
-
-.fonctionnement {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 10px 0;
-  margin: 0 0 20px 0;
-}
-
-.fonctionnement h2 {
-  padding-left: 14px;
-}
-
-.fonctionnement ol {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 0 20px;
-  counter-reset: steps;
-}
-
-.fonctionnement ol li {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  padding: 12px;
-  width: 85%;
-  list-style-type: none;
-  background-color: #f6f6f6;
-  border-radius: 25px;
-  box-shadow: 0 5px 5px darkgrey;
-  transition: 0.2s;
-  font-weight: 600;
-  position: relative;
-}
-
-.fonctionnement ol li i {
-  color: grey;
-  align-items: center;
-  position: absolute;
-  left: 10%;
-  font-size: 20px;
-}
-
-.fonctionnement p {
-  text-align: center;
-}
-
-.fonctionnement ol li:hover {
-  background-color: #F5EDFF;
-}
-
-.fonctionnement ol li:hover i {
-  color: #9356DC;
-}
-
-.fonctionnement ol li::before {
-  content: counter(steps);
-  counter-increment: steps;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: -24px;
-  border: 1px solid;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  background-color: #9356DC;
-  color: white;
-  transform: translate(10px, -1px);
-}
-
 #head {
   display: flex;
   justify-content: center;
@@ -285,7 +162,7 @@ footer .footer_conteneur a {
   height: 230px;
 }
 
-.localisation {
+main .localisation {
   width: auto;
   display: flex;
   justify-content: center;
@@ -294,20 +171,114 @@ footer .footer_conteneur a {
   gap: 20px;
   padding: 10px 30px;
 }
-
-.localisation i {
+main .localisation i {
   margin-left: 90px;
 }
-
-input {
+main input {
   border: none;
   font-size: larger;
   background-color: #eaeaea;
 }
-
-.search::placeholder {
+main .search::placeholder {
   content: "";
   color: black;
+}
+
+main .fonctionnement {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 0;
+  margin: 0 0 20px 0;
+}
+main .fonctionnement h2 {
+  padding-left: 14px;
+}
+main .fonctionnement p {
+  text-align: center;
+}
+main .fonctionnement ol {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  counter-reset: steps;
+}
+main .fonctionnement ol li {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 12px;
+  width: 85%;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px darkgrey;
+  transition: 0.2s;
+  font-weight: 600;
+  position: relative;
+}
+main .fonctionnement ol li i {
+  color: grey;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  font-size: 20px;
+}
+main .fonctionnement ol li:hover {
+  background-color: #F5EDFF;
+}
+main .fonctionnement ol li:hover i {
+  color: #9356DC;
+}
+main .fonctionnement ol li::before {
+  content: counter(steps);
+  counter-increment: steps;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -24px;
+  border: 1px solid;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  background-color: #9356DC;
+  color: white;
+  transform: translate(10px, -1px);
+}
+
+main .nos_restaurants {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #f6f6f6;
+  padding-bottom: 30px;
+}
+main .nos_restaurants .btn {
+  border-radius: 30px;
+  padding: 15px;
+  border: none;
+  margin: 20px 0 30px 0;
+  font-size: 1em;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(177deg, #FF79DA, #9356DC);
+}
+
+.nos_restaurants p {
+  padding: 0 10px;
+}
+
+.nos_restaurants h2 {
+  font-size: 25px;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
 }
 
 .restaurants {
@@ -532,6 +503,32 @@ input {
   animation-delay: 0.8s;
   animation-duration: 2s;
   animation-fill-mode: backwards;
+}
+
+footer {
+  background: #353535;
+  color: white;
+}
+footer .footer_conteneur {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1440px;
+  margin: auto;
+  padding-left: 20px;
+}
+footer .footer_conteneur h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+}
+footer .footer_conteneur a {
+  color: white;
+  text-decoration: none;
+  line-height: 28px;
+}
+
+.footer_conteneur i.fa-solid.fa-utensils {
+  margin-right: 6px;
 }
 
 /*# sourceMappingURL=styles.css.map */

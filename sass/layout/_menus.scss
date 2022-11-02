@@ -1,0 +1,135 @@
+
+  /*carte des menus*/
+  .container_menu {
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px 35px 0 0;
+    transform: translateY(-28px);
+    padding-top: 10px;
+    background-color: white;
+  }
+  
+  .restaurant_title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .restaurant_title .card_heart {
+    top: 74px;
+  }
+  
+  .container_menu h1 {
+    font-family: "Shrikhand";
+    font-size: 26px;
+    padding-right: 20px;
+  }
+  
+  .container_menu h3 {
+    font-weight: lighter;
+    padding-left: 26px;
+  }
+  
+  .bottom_border {
+    border: $color-tertiary solid;
+    position: absolute;
+    transform: translateY(-14px);
+    left: 27px;
+    width: 8%;
+  }
+  
+  .card_menu {
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px darkgrey;
+    margin: 0 30px 10px;
+    padding: 0 10px;
+    align-items: center;
+    overflow: hidden;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  .card_menu .article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -25px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .card_menu .price {
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+  .price{
+    font-weight: bold;
+  }
+  .check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color-tertiary;
+    color: white;
+    padding: 0 25px;
+    height: 80px;
+    margin-right: -90px;
+    border-radius: 0 20px 20px 0;
+    font-size: x-large;
+  }
+  
+  
+  .card_menu:hover .check {
+    opacity: 1;
+    transition: transform 0.5s ease-in-out;
+    transition-property: margin-right;
+    background: white;
+    background-color: $color-tertiary;
+    margin-right: -10px;
+  }
+  .card_menu:hover i{
+    animation: circle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background: $color-tertiary;
+    color: white;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+  }
+  .card_menu .article h4 {
+    margin-bottom: 0;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card_menu .article span {
+    margin-top: 0;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .menu_entrees {
+    animation: animation_menus;
+    animation-delay: 0s;
+    animation-duration: 2s;
+  }
+  
+  .menu_plats {
+    animation: animation_menus;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+  }
+  
+  .menu_desserts {
+    animation: animation_menus;
+    animation-delay: 0.8s;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+  }

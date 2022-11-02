@@ -1,0 +1,33 @@
+#head {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    height: 30px;
+  }
+  
+  #head .menu_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .menu_header a {
+    position: absolute;
+    left: 10%;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .main_menu img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  
+  .img_restaurant {
+    height: 230px;
+  }
+  

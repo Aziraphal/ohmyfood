@@ -1,0 +1,11 @@
+@mixin tablette{
+  @media screen and (min-width:map-get($breakpoints, tablette)) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }  
+}
+.fonctionnement{
+    @include tablette
+
+}

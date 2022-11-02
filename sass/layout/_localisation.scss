@@ -1,0 +1,23 @@
+main{
+.localisation {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    gap: 20px;
+    padding: 10px 30px;
+  }
+  .localisation i{
+    margin-left: 90px;
+  }
+  input {
+    border: none;
+    font-size: larger;
+    background-color: #eaeaea;
+  }
+  
+  .search::placeholder {
+    content: "";
+    color: black;
+  }}

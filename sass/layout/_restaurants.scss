@@ -1,0 +1,89 @@
+.restaurants {
+    background-color: #eaeaea;
+    padding: 30px 20px;
+  }
+  
+  .card_restaurants {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card {
+    position: relative;
+    text-decoration: none;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px $color-tertiary;
+    transition: 0.2s;
+  }
+  
+  .card_images {
+    height: 12rem;
+    width: 100%;
+  }
+  
+  .card_images img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .new {
+    position: absolute;
+    right: 33px;
+    margin-top: 20px;
+    padding: 10px;
+    color: #065f2e;
+    background-color: $color-tertiary;
+    font-weight: 600;
+  }
+  
+  .card_description {
+    position: relative;
+    color: black;
+    padding: 0 20px;
+  }
+  
+  .card_heart {
+    font-size: xx-large;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .card_heart i.fa-heart {
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+  }
+  
+  .card_heart i.fa-solid.fa-heart {
+    opacity: 0;
+  }
+  
+  .card_heart i.fa-solid.fa-heart:not(:active) {
+    opacity: 0;
+  }
+  
+  .card_heart i.fa-solid.fa-heart:hover {
+    opacity: 1;
+    color: transparent;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
+    background: linear-gradient($color-primary, $color-secondary);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+  }
+  
+  
+  
+  .card_title p {
+    margin-top: -15px;
+  }
+  
+  
