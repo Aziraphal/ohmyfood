@@ -92,7 +92,7 @@ header {
   background: linear-gradient(90deg, #9356DC, #FF79DA);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(70, 42, 42, 0);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
 .circle_1 {
@@ -115,7 +115,6 @@ header {
   height: 180px;
   border-radius: 50%;
   border: #FF79DA dashed 5px;
-  animation: turn ease 2.8s;
 }
 
 .circle_3 {
@@ -126,7 +125,7 @@ header {
   height: 160px;
   border-radius: 50%;
   border: #99E2D0 solid 5px;
-  animation: turn none;
+  animation: turn reverse 2.8s ease-in-out;
 }
 
 #head {

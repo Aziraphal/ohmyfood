@@ -20,7 +20,7 @@
   background: linear-gradient(90deg, $color-primary, $color-secondary);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(70, 42, 42, 0);
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 .circle_1{
   display: flex;
@@ -41,8 +41,6 @@
   height: 180px;
   border-radius: 50%;
   border: $color-secondary dashed 5px;
-  animation: turn ease 2.8s;
-  
 }
 .circle_3{
   display: flex;
@@ -52,5 +50,5 @@
   height: 160px;
   border-radius: 50%;
   border: $color-tertiary solid 5px;
-  animation: turn none;
+  animation: turn reverse 2.8s ease-in-out;
 }
