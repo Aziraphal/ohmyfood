@@ -1,11 +1,21 @@
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .fonctionnement {
-    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 }
-
+@media screen and (min-width: 992px) {
+    .fonctionnement ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*keyframes animation check*/
 @keyframes circle {
   from {
@@ -280,18 +290,16 @@ main .nos_restaurants .btn {
   margin-bottom: 0;
 }
 
-.restaurants {
+main .restaurants {
   background-color: #eaeaea;
   padding: 30px 20px;
 }
-
-.card_restaurants {
+main .card_restaurants {
   gap: 30px;
   display: flex;
   flex-direction: column;
 }
-
-.card {
+main .card {
   position: relative;
   text-decoration: none;
   border-radius: 30px;
@@ -299,24 +307,20 @@ main .nos_restaurants .btn {
   background-color: white;
   cursor: pointer;
 }
-
-.card:hover {
+main .card:hover {
   box-shadow: 0 0 10px #99E2D0;
   transition: 0.2s;
 }
-
-.card_images {
+main .card_images {
   height: 12rem;
   width: 100%;
 }
-
-.card_images img {
+main .card_images img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
-
-.new {
+main .new {
   position: absolute;
   right: 33px;
   margin-top: 20px;
@@ -325,34 +329,28 @@ main .nos_restaurants .btn {
   background-color: #99E2D0;
   font-weight: 600;
 }
-
-.card_description {
+main .card_description {
   position: relative;
   color: black;
   padding: 0 20px;
 }
-
-.card_heart {
+main .card_heart {
   font-size: xx-large;
   position: relative;
   cursor: pointer;
 }
-
-.card_heart i.fa-heart {
+main .card_heart i.fa-heart {
   position: absolute;
   right: 20px;
   bottom: 60px;
 }
-
-.card_heart i.fa-solid.fa-heart {
+main .card_heart i.fa-solid.fa-heart {
   opacity: 0;
 }
-
-.card_heart i.fa-solid.fa-heart:not(:active) {
+main .card_heart i.fa-solid.fa-heart:not(:active) {
   opacity: 0;
 }
-
-.card_heart i.fa-solid.fa-heart:hover {
+main .card_heart i.fa-solid.fa-heart:hover {
   opacity: 1;
   color: transparent;
   transition-duration: 0.8s;
@@ -361,8 +359,7 @@ main .nos_restaurants .btn {
   background-clip: border-box;
   -webkit-background-clip: text;
 }
-
-.card_title p {
+main .card_title p {
   margin-top: -15px;
 }
 
