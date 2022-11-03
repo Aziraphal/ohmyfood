@@ -13,6 +13,7 @@
   animation-fill-mode: forwards;
 }
 .container p{
+  position: absolute;
   font-family: "Shrikhand";
   font-size: x-large;
   font-weight: bold;
@@ -29,9 +30,11 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: $color-primary dashed 5px;
+  border: $color-primary dashed 6px;
   animation: turn ease-in-out;
-  animation-duration: 2.8s;
+  animation-duration: 2.7s;
+  animation-timing-function: linear;
+  
 }
 .circle_2{
   display: flex;
@@ -40,7 +43,7 @@
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: $color-secondary dashed 5px;
+  border: $color-secondary solid 5px;
 }
 .circle_3{
   display: flex;
@@ -50,5 +53,5 @@
   height: 160px;
   border-radius: 50%;
   border: $color-tertiary solid 5px;
-  animation: turn reverse 2.8s ease-in-out;
+  animation: turn reverse 2.7s linear;
 }

@@ -9,7 +9,6 @@ footer {
 
     h3 {
       font-family: "Shrikhand", cursive;
-      font-weight: 400;
     }
 
     a {
@@ -25,4 +24,8 @@ footer {
 
 .footer_conteneur i.fa-solid.fa-utensils {
   margin-right: 6px;
+}
+.footer_flex{
+  display: flex;
+  flex-direction: column;
 }
