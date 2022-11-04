@@ -76,7 +76,7 @@ header {
   align-items: center;
   justify-content: center;
   animation: ender;
-  animation-duration: 3;
+  animation-duration: 3s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
