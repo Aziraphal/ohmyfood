@@ -61,6 +61,11 @@ header {
   box-shadow: 0 5px 5px darkgrey;
 }
 
+.btn:hover {
+  box-shadow: 0 8px 8px #99E2D0;
+  font-weight: 600;
+}
+
 .container {
   position: fixed;
   height: 100vh;
@@ -541,11 +546,11 @@ footer .footer_conteneur a {
   }
   main .card {
     width: 600px;
-    height: 300px;
+    height: 275px;
   }
   main .card_heart {
     right: 20px;
-    top: 40px;
+    top: 32px;
   }
   .menu_flex {
     display: flex;
