@@ -76,4 +76,31 @@
 }
 }
 
+@media  screen and (min-width: 768px) {
+    
+    .main_menu .btn{
+        width: 20%;
+        margin-bottom: 40px;
+    }
+    .btn_center{
+        display: flex;
+        justify-content: center;
+    
+}
+    }
+    footer {
+        h3{
+            display: flex;
+            justify-content: center;
+            letter-spacing: 2px;
+        }
+    
+        .footer_flex{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 25px 20px 0;
+        }
+    }
+
 /*# sourceMappingURL=styles.css.map */
