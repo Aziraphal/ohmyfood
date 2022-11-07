@@ -80,7 +80,7 @@ header {
   animation-fill-mode: forwards;
 }
 
-.container p {
+.container h1 {
   position: absolute;
   font-family: "Shrikhand";
   font-size: x-large;
@@ -134,6 +134,7 @@ header {
 
 .logo {
   height: 30px;
+  width: auto;
 }
 
 #head .menu_header {
