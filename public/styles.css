@@ -555,7 +555,9 @@ footer .footer_conteneur a {
   .menu_flex {
     display: flex;
   }
-  .menu_entrees, .menu_plats, .menu_desserts {
+  .menu_entrees,
+.menu_plats,
+.menu_desserts {
     width: 33%;
   }
   .main_menu .btn {
@@ -587,19 +589,18 @@ footer .footer_conteneur a {
     display: flex;
     justify-content: center;
   }
+  footer h3 {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+  }
+  footer .footer_flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px 20px 0;
+  }
 }
-footer h3 {
-  display: flex;
-  justify-content: center;
-  letter-spacing: 2px;
-}
-footer .footer_flex {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 25px 20px 0;
-}
-
 /*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
