@@ -62,9 +62,9 @@ header {
 }
 
 .btn:hover {
-  box-shadow: 0 10px 10px darkgrey;
+  box-shadow: 0 8px 8px #9b9b9b;
   font-weight: 600;
-  background: 60%;
+  background: linear-gradient(180deg, blue, red);
 }
 
 .container {
