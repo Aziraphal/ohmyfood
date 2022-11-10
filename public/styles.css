@@ -62,9 +62,9 @@ header {
 }
 
 .btn:hover {
-  box-shadow: 0 8px 8px #9b9b9b;
+  box-shadow: 0 8px 8px rgb(94, 94, 94);
   font-weight: 600;
-  background: linear-gradient(180deg, blue, red);
+  background: linear-gradient(177deg, #ff93e0, #a67adb);
 }
 
 .container {
@@ -259,7 +259,8 @@ main .nos_restaurants {
   background: #f6f6f6;
   padding-bottom: 30px;
 }
-main .nos_restaurants .btn {
+
+main .btn {
   border-radius: 30px;
   padding: 15px;
   border: none;
@@ -348,6 +349,7 @@ main .card_heart i.fa-solid.fa-heart:hover {
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: border-box;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 main .card_title p {
   margin-top: -15px;
